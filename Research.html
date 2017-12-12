@@ -41,7 +41,6 @@
 	font-style: italic;
 }
  .STYLE26 {font-size: 18px; font-weight: bold; }
- .STYLE27 {font-size: 24px; font-weight: bold; }
  </style>
 </head>
 
@@ -68,86 +67,85 @@
        <td height="206" valign="top">
 <table width="100%" height="1759" border="0" cellpadding="0" cellspacing="0">     
   <tr>   
-       <td width="100%" height="1759" valign="top" class="style3"><p><span class="STYLE27">Any suggestions welcome! Please send it to <a href="mailto:kongry.16@sem.tsinghua.edu.cn">kongry.16@sem.tsinghua.edu.cn</a> . </span></p>
-         <p><a href="#r1" class="STYLE18">Recommendation systems</a></p>
+       <td width="100%" height="1759" valign="top" class="style3"><p><a href="#r1" class="STYLE18">Recommender systems</a></p>
          <p class="STYLE18"><a href="#crowd">Crowdsourcing systems</a></p>
          <p class="STYLE18"><a href="#pre">Prediction of Markets and Economies, Markov Chain Monte Carlo (MCMC) </a></p>
          <p class="STYLE18"><a href="#risk">Risk Management</a></p>
          <p><span class="STYLE21"><span class="STYLE16"><strong><a name="r1" id="r1"></a></strong></span></span><span class="STYLE16"><span class="STYLE20"><span class="STYLE18"><strong>09/2014-05/2016, Department of Data  Mining, National Engineering  Laboratory for Speech and Language Information Processing, supervised by Prof. Qi Liu</strong>. <br />
           1. Design recommendation systems for group users.</span></span></span></p>
          <blockquote>
-           <p><span class="STYLE18"> 1）Group-oriented services such as group recommendations aim to provide services for a group of users. For these applications, how to aggregate the preferences of diﬀerent group members is the toughest yet most important problem.</span></p>
-           <p><span class="STYLE18">2）In traditional preference aggregation methods, such as <em>prefernce aggregation and score aggregation</em>,  the interactions and fairness of group members are still largely ignored.</span> <span class="STYLE18">Therefore, these aggregation approaches, which are unable to figure out the optimal selections that can be accepted by all members in a group, may lead to unsatisfying services.</span> </p>
-           <p><span class="STYLE18">3)Inspired by game theory, we propose to explore the idea of Nash equilibrium to simulate the selections of members in a group by a game process. Game process could capture the group members’ interactions and Nash equilibrium solution considers the fairness as much as possible.</span></p>
-           <p><span class="STYLE18">4)Along this line, we ﬁrst calculate the preferences (group-dependent optimal selections) of each individual member in a given group scene, i.e., an equilibrium solution of this group, with the help of two pruning approaches. Then, to get the aggregated unitary preference of each group from all group members, we design a matrix factorizationbased method which aggregates the preferences in latent space and estimates the ﬁnal group preference in rating space. After obtaining the group preference, group-oriented services (e.g., group recommendation) can be directly provided. </span></p>
+           <p class="STYLE18">1）Group-oriented services such as group recommendations aim to provide services for a group of users. For these applications, how to aggregate the preferences of diﬀerent group members is the toughest yet most important problem.</p>
+           <p class="STYLE18">2）In traditional preference aggregation methods, such as preference aggregation and score aggregation, the interactions and fairness of group members are still largely ignored. Therefore, these aggregation approaches, which are unable to figure out the optimal selections that can be accepted by all members of a group, may lead to unsatisfying services. </p>
+           <p class="STYLE18">3)Inspired by game theory, we propose to explore the idea of Nash equilibrium to simulate the selections of members in a group by a game process. The game process could capture the group members’ interactions and Nash equilibrium solution considers the fairness as much as possible.</p>
+           <p class="STYLE18">4)Along with this line, we ﬁrst calculate the preferences (group-dependent optimal selections) of each individual member in a given group scene, i.e., an equilibrium solution of this group, with the help of two pruning approaches. Then, to get the aggregated unitary preference of each group from all group members, we design a matrix factorization-based method which aggregates the preferences in latent space and estimates the ﬁnal group preference in rating space. After obtaining the group preference, group-oriented services (e.g., group recommendation) can be directly provided. </p>
            <p><span class="STYLE16"><span class="STYLE20"> <img src="pic/research1.JPG" alt="1" width="700" height="420" align="center" /></span></span></p>
            <p class="STYLE18">5) We examine our method on <em>Yelp</em> dataset who has 22333 ratings. The results show that the nash method has an outstanding performance on 4 major metrics over other methods. </p>
            <p><span class="STYLE16"><span class="STYLE20"><img src="pic/research2.JPG" width="950" height="407"></span></span></p>
            <p><span class="STYLE16"><span class="STYLE20"><br />
-                <span class="STYLE22">Hongke Zhao, Qi Liu, Yong Ge, Ruoyan Kong, Enhong Chen, <a href="pic/Nash_Recommendation.pdf">Group Preference Aggregation: A Nash Equilibrium Approach</a>, In Proceedings of the 16th IEEE International Conference on Data Mining (ICDM'16), Barcelona, Spain, 2016, 679-688</span></span></span></p>
-           <p><span class="STYLE21">My major work in this program includes 1) coming up with the initial idea 2) the building of the model of initial system 3) coding work of the system and the experiment. I got <em>Outstanding Students Research of USTC</em> in 2015.</span></p>
-           </blockquote>         
+                <span class="STYLE22">6) </span></span></span><span class="STYLE21"> <em>Outstanding Student Research</em>, USTC, top 3% out of undergraduates in USTC </span></p>
+           <p><span class="STYLE22">Hongke Zhao, Qi Liu, Yong Ge, Ruoyan Kong, Enhong Chen, <a href="pic/Nash_Recommendation.pdf">Group Preference Aggregation: A Nash Equilibrium Approach</a>, In Proceedings of the 16th IEEE International Conference on Data Mining (ICDM'16), Barcelona, Spain, 2016, 679-688</span></p>
+         </blockquote>         
          <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18"><a name="crowd" id="crowd"></a>2. Model of Incentives in Repeated Crowdsourcing</span></span></span> <span class="STYLE18">System </span></p>
          <blockquote>
-           <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18">Repeated crowdsourcing system refers to the crowdsourcing systems with tasks which need to be conducted several times. A problem needs to be solved in repeated crowdsourcing system is how to set appropriate incentives for task receivers to maximize the profits of task givers and task receivers.</span></span></span></p>
-           <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18"><br />
-             I build the discrete model of repeated crowdsourcing system and calculate the profits of task givers and task receivers in each round under different ways of pay, different productive functions and different incentives. Then the following conclusions can be drawn: <br />
-             1. In discrete model of repeated crowdsourcing system, if incentives are limited, then the cumulative profits of task givers and task receivers are limited. <br />
-             2. In low-pay discrete model of crowdsourcing system, the cumulative profits of task givers are increasing with tthe number of turns. <br />
-             3. The monotonicity of the cumulative profits of task receivers are related to the relative strength of different incentives and the initial profits of task receivers. </span></span></span></p>
-           <p class="STYLE18">From this work, the mediation platforms can design a pricipal scheme to incentivize the participation of both task givers and task receivers. (future work) </p>
-           <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18">This is my undergraduate thesis and I got A. </span></span></span></p>
+           <p class="STYLE18">1) Repeated crowdsourcing system refers to the crowdsourcing systems with tasks which need to be conducted several times. A problem needs to be solved in repeated crowdsourcing system is how to set appropriate incentives for task receivers to maximize the profits of task givers and task receivers.</p>
+           <p class="STYLE18">2) The discrete model of repeated crowdsourcing system was built through a Bayesian Game. The profits of task givers and task receivers in each round under different ways of payment, different productive functions, and different incentives were estimated.</p>
+           <p class="STYLE18">3) The following conclusions can be drawn:<br>
+             In the discrete model of repeated crowdsourcing system, if incentives are limited, then the cumulative profits of task givers and task receivers are limited. <br>
+             In the low-pay discrete model of crowdsourcing system, the cumulative profits of task givers are increasing with the number of turns. <br>
+             The monotonicity of the cumulative profits of task receivers is related to the relative strength of different incentives and the initial profits of task receivers. </p>
+           <p class="STYLE18">4) The crowdsourcing platforms can use this model to design a principal scheme to incentivize the participation of both task givers and task receivers.</p>
+           <p class="STYLE18">5) A-level undergraduate thesis, top 10% out of undergraduates in USTC. </p>
            <p>&nbsp;</p>
            </blockquote>         
          <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE26"><a name="pre" id="pre"></a>12/2016-08/2017 Department of Investment Management, Derivatives-China<strong>, supervised by Mr. You Zhang (Chairman) and </strong></span></span></span><span class="STYLE16"><span class="STYLE20"><span class="STYLE26"><strong>Dr. Ling Long. </strong></span></span></span></p>
-         <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18">1.  Built market timing strategy based on Hidden Markov  Model with improvement via Adaboost to apply to different market  environments.</span></span></span></p>
+         <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18">1.  </span></span></span><span class="STYLE18">A Half-supervised Hidden Markov Model to Forecast Index Futures.</span></p>
          <blockquote>
-           <p><span class="STYLE16"><span class="STYLE20"><span class="STYLE18">1) In order to predict the market to make profit, we use hidden markov model (HMM) to divide the market into N different status. </span></span></span></p>
-           <p class="STYLE18">2) The Baum-Welch algorithm that is currently used to estimate the HMM only converges to the local solution of HMM and can't be applied in the real trading because its result will change every time. We design a parallel-serial estimation algorithm to solve this problem and got a stable solution in industrilization. This is a creative work which has not been done before. </p>
-           <p><img src="pic/ada4.jpg" width="551" height="305"></p>
-           <p class="STYLE18">Fig 1. The status of 399905.SZ predicted by HMM (which gives a green <strong>warning before the great market crash</strong> in 2015) </p>
-           <p class="STYLE18">We can find out that HMM has a good performance in describing the market. </p>
-           <p class="STYLE18">3) The estimation of HMM is unsupervised and may not towards the direction which we need to make profits from. Also, the estimation process is largely influenced by the big trend of the market, for example, the big trend of the market from 2006 to 2015 is increasing, then HMM will tend to give an increasing status instead of the local situation of the market. We need to <span class="STYLE16"><span class="STYLE20"><span class="STYLE18">build market timing strategy which can be applied to different market  environments. </span></span></span></p>
-           <p><span class="STYLE16"><span class="STYLE20"><img src="pic/ada1.JPG" width="727" height="378" /></span></span></p>
+           <p class="STYLE18">1) In order to predict the market to make a profit, we use hidden Markov model (HMM) to divide the market into N different status. </p>
+           <p class="STYLE18">2) The Baum-Welch algorithm that is currently used to estimate the HMM only converges to the local solution of HMM and can't be applied in the real trading because its result will change every time. We design a parallel-serial estimation algorithm to solve this problem and got a stable solution in industrialization. This is a creative work which has not been done before. </p>
+           <p class="STYLE18"><span class="STYLE18"><img src="pic/ada4.jpg" width="551" height="305"></span></p>
+           <p class="STYLE18"><span class="STYLE18">Fig 1. The status of 399905.SZ predicted by HMM (which gives a green <strong>warning before the great market crash</strong> in 2015) </span></p>
+           <p class="STYLE18"><span class="STYLE18">We can find out that HMM has a good performance in describing the market. </span></p>
+           <p class="STYLE18"><span class="STYLE18">3) The estimation of HMM is unsupervised and may not towards the direction which we need to make profits from. Also, the estimation process is largely influenced by the big trend of the market, for example, the big trend of the market from 2006 to 2015 is increasing, then HMM will tend to give an increasing status instead of the local situation of the market. We need to build market timing strategy which can be applied to different market  environments. </span></p>
+           <p class="STYLE18"><span class="STYLE18"><img src="pic/ada1.JPG" width="727" height="378" /></span></p>
          </blockquote>
-         <p class="STYLE18">&nbsp;</p>
          <blockquote>
-           <p class="STYLE18"> Because Baum-Welch algorithm and HMM contains a concept of dependent time series, we can't solve this problem by simply enlarge the weights of negative samples.</p>
-           <p class="STYLE18">We use an adaboost-subsection estimation method to solve this problem. To our knowledge, this is a pioneer work . </p>
-         </blockquote>
-         <p>&nbsp;</p>
+           <p class="STYLE18"><span class="STYLE18">Because Baum-Welch algorithm and HMM include dependent time series, we can't solve this problem by simply enlarge the weights of negative samples.</span></p>
+           <p class="STYLE18"><span class="STYLE18">We use an AdaBoost-subsection estimation method to solve this problem. To our knowledge, this is a pioneer work.</span></p>
+           </blockquote>
          <blockquote>
-           <p><span class="STYLE16"><span class="STYLE20"><img src="pic/ada2.JPG" width="728" height="346" /></span></span></p>
-           <p class="STYLE18">Our algorithm has an outstanding performance in predicting the market. </p>
-           <p><img src="pic/ada5.JPG" width="612" height="344"></p>
-           <p><span class="STYLE16"><span class="STYLE18"></span></span></p>
-           <p><span class="STYLE18">It can also bring consistent return.</span><br>  
-               <img src="pic/ada6.JPG" width="942" height="397"></p>
-           <p><img src="pic/ada7.JPG" width="916" height="332"></p>
+           <p class="STYLE18"><span class="STYLE18"><img src="pic/ada2.JPG" width="728" height="346" /></span></p>
+           <p class="STYLE18"><span class="STYLE18">Our algorithm has an outstanding performance in predicting the market. </span></p>
+           <p class="STYLE18"><span class="STYLE18"><img src="pic/ada5.JPG" width="612" height="344"></span></p>
+           <p>&nbsp;</p>
+           <p><span class="STYLE18">It can also bring a consistent return.<br>  
+               <img src="pic/ada6.JPG" width="942" height="397"></span></p>
+           <p><span class="STYLE18"><img src="pic/ada7.JPG" width="916" height="332"></span></p>
          </blockquote>         
-         <p><span class="STYLE16"><span class="STYLE18"> 2. Application of Markov Chain Monte Carlo (MCMC) and HMM in GDP prediction.</span></span></p>
+         <p><span class="STYLE18"> 2. Application of Markov Chain Monte Carlo (MCMC) and HMM in GDP prediction.</span></p>
          <blockquote>
-           <p>1) <span class="STYLE18">If we want to apply HMM in GDP prediction, we would find out that the large value of features (E.g. the overall gdp of last year) will keep us from good estimation of HMM, especially the means matrix and covariance matrix in HMM. We need to find a method to avoid this drawback of HMM estimation algorithm.</span></p>
-           <p class="STYLE18">2) We use Markov Chain Monte Carlo (MCMC), which we can input our prior information about the distribution of parameters in. MCMC has a markov process which will converge to the best estimation based on the posteriori distribution and the priori distribution of parameters. </p>
-           <p><span class="STYLE16"><span class="STYLE20"> <img src="pic/gdp1.JPG" width="741" height="325" /></span></span></p>
-           <p class="STYLE18">3) We can see that MCMC has lower error rate in the estimation of parameters who have high dimensions and large value. </p>
+           <p><span class="STYLE18">1) If we want to apply HMM in GDP prediction, we would find out that the large value of features (E.g. the overall GDP of last year) will keep us from a good estimation of HMM, especially the means matrix and covariance matrix in HMM. We need to find a method to avoid this drawback of HMM estimation algorithm.</span></p>
+           <p><span class="STYLE18">2) We use Markov Chain Monte Carlo (MCMC), which we can input our prior information about the distribution of parameters in, and Sobel Sequence. MCMC has a Markov process which will converge to the best estimation based on the posterior distribution and the prior distribution of parameters. </span></p>
+           <p> <span class="STYLE18"><img src="pic/gdp1.JPG" width="741" height="325" /></span></p>
+           <p class="STYLE18"><span class="STYLE18">3) We can see that MCMC has a lower error rate in the estimation of parameters who have high dimensions and large value. </span></p>
            <p class="STYLE18"><span class="STYLE16"><img src="pic/gdp2.jpg" width="739" height="488" /></span></p>
            <p class="STYLE18"><span class="STYLE16"><br />
              Thanks to the beneficial suggestions from Prof. Thomas J. Sargent. </span></p>
            <p class="STYLE18">&nbsp;</p>
          </blockquote>
          <p class="STYLE18"><span class="STYLE16"><a name="risk" id="risk"></a><strong>09/2017- (ongoing) School of Economics and Management, Tsinghua University, supervised by Prof. Michael R. Powers</strong></span><strong>.</strong></p>
-         <p class="STYLE18">1.Risk Finance Paradigm with Copulas</p>
+         <p class="STYLE18">1.Risk Finance Strategy Paradigm with Copulas</p>
          <blockquote class="STYLE18">
-           <p class="STYLE18">1) When facing with risks, companies can choose to pool, hedge or avoid them. However, the traditional risk finance paradigm can't give a quantitative method to describe the condition of the application of these strategies. </p>
-           <p class="STYLE18">2) In our prior work (<em>Risk Finance for Catastrophe Losses with Pareto-Calibrated Levy-Stable Severities, Michael R. Powers</em>), we used stable distribution to model this paradigm. In this paradigm, we assume that losses are independent, which is inconsistent with our real experience. </p>
-           <p><span class="STYLE16"> If we assume losses are correlated, the paradigm would be different. The reason for taking correlation into consideration is that correlation between losses will affect people’s decision about whether to hedge or pool the loss portfolio L. For example, a group of marine traders want to limit their ship sinking risks. If their routes are different, their ship sinking risks are uncorrelated and they can divide their merchandise into portions and distribute across all ships (pooling), then no trader will be devastated by sinking of one ship. However if their routes are the same, their ship sinking risks are correlated (their ships may be attacked by hurricane or tidal wave together), then pooling will be useless in this case because they will be devastated by sinking of ship altogether and they should choose to hedge this portfolio like to buy insurance from an insurer (who can afford this because he can pool the risks from different marine trader groups).</span></p>
-           <p><span class="STYLE16">3) Heavy-tailed case: As p increases, the firm will be more sensitive to risks, and the lower boundary will decreases more rapidly as the expected frequency increases. It can be observed that when p &lt; 2, a firm will still choose pooling when the dependence between risks is small as the expected frequency increases. However, when p &gt; 2, as the expected frequency is large enough, the firm will always choose hedging no matter the dependence is small or not.<br />
+           <p>1) When dealing with risks, companies can choose to pool, hedge or avoid them. However, the traditional risk finance paradigm can't give a quantitative method to describe the condition of the application of these strategies. </p>
+           <p>2) In our prior work (Risk Finance for Catastrophe Losses with Pareto-Calibrated Levy-Stable Severities, Michael R. Powers), we used stable distribution to model this paradigm. In this paradigm, we assume that losses are independent, which is inconsistent with our real experience. </p>
+           <p>If we assume losses are correlated, the paradigm would be different. The reason for taking correlation into consideration is that correlation between losses will affect people’s decision about whether to hedge or pool the loss portfolio L. For example, a group of marine traders wants to limit their ship sinking risks. If their routes are different, their ship sinking risks are uncorrelated and they can divide their merchandise into portions and distribute across all ships (pooling), then no trader will be devastated by a sinking of one ship. However if their routes are the same, their ship sinking risks are correlated (their ships may be attacked by hurricane or tidal wave together), then pooling will be useless in this case because they will be devastated by a sinking of ship altogether and they should choose to hedge this portfolio like to buy insurance from an insurer (who can afford this because he can pool the risks from different marine trader groups).</p>
+           <p>3) We also  designed a parallel-serial numerical algorithm to get Fourier-analytic risks for levy-stable variables. </p>
+           <p>4) Heavy-tailed case: As p increases, the firm will be more sensitive to risks, and the lower boundary will decreases more rapidly as the expected frequency increases. It can be observed that when p &lt; 2, a firm will still choose to pool when the dependence between risks is small as the expected frequency increases. However, when p &gt; 2, as the expected frequency is large enough, the firm will always choose to hedge no matter the dependence is small or not.</p>
+           <p class="STYLE18"><span class="STYLE16"><br />
            </span><img src="pic/risk1.JPG" width="459" height="303" /><img src="pic/risk2.JPG" width="431" height="306" /></p>
-           <p>4) Light-tailed case:</p>
+           <p>5) Light-tailed case:</p>
            <p>When the expected frequency become a little larger, the firm will be able to accept higher dependence(TypeII). It may be attributed to that a little larger frequency offers more choice for the firm to distribute the risks. </p>
-           <p>When the expected frequency achieves some point, the firm can only accept lower dependence as the expected frequency increases(TypeI). It may be attributed to that higher frequency will increase a firms’ overall risks to a large extent. And an interesting inverse lower part appears(TypeIII). In this part, the firm will be exposed to high frequency and low dependence risks, and it will choose hedging to diminish the risks brought by the high frequency.</p>
-           <p>As p increases, the firm will be more sensitive to risks, and the lower part of the T ypeI boundary will decreases more rapidly as the expected frequency increases. When p &gt; 4/3, the hedging districts in the right-upper corner and in the right-lower corner will merge when the expected frequency is large enough, which means that the firm will always choose hedging when the expected frequency is large enough. When p &lt; 4/3, there will always be a room left for pooling no matter how larger the expected frequency will be.</p>
+           <p>When the expected frequency achieves some point, the firm can only accept lower dependence as the expected frequency increases(TypeI). It may be attributed to that higher frequency will increase a firms’ overall risks to a large extent. And an interesting inverse lower part appears(TypeIII). In this part, the firm will be exposed to high frequency and low dependence risks, and it will choose to hedge to diminish the risks brought by the high frequency.</p>
+           <p>As p increases, the firm will be more sensitive to risks, and the lower part of the TypeI boundary will decreases more rapidly as the expected frequency increases. When p &gt; 4/3, the hedging districts in the right-upper corner and in the right-lower corner will merge when the expected frequency is large enough, which means that the firm will always choose to hedge when the expected frequency is large enough. When p &lt; 4/3, there will always be a room left for pooling no matter how larger the expected frequency will be.</p>
            <p><img src="pic/risk3.JPG" width="452" height="329" /><img src="pic/risk4.JPG" width="434" height="319" /></p>
            <p>&nbsp;</p>
            </blockquote>         
