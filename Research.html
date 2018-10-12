@@ -65,12 +65,19 @@
 <table width="100%" height="3753" border="0" cellpadding="0" cellspacing="0" >
     <tr>
        <td height="206" valign="top">
-<table width="100%" height="1759" border="0" cellpadding="0" cellspacing="0">     
+<table width="100%" height="3518" border="0" cellpadding="0" cellspacing="0">     
   <tr>   
-       <td width="100%" height="1759" valign="top" class="style3"><p><a href="#r1" class="STYLE18">Recommender systems</a></p>
+       <td width="100%" height="1759" valign="top" class="style3"><p><span class="STYLE18"><a href="#Profit">Profit-orietnted Recommender systems</a></span></p>
+         <p><a href="#r1" class="STYLE18">Group Recommender systems</a></p>
          <p class="STYLE18"><a href="#crowd">Crowdsourcing systems</a></p>
          <p class="STYLE18"><a href="#pre">Prediction of Markets and Economies, Markov Chain Monte Carlo (MCMC) </a></p>
          <p class="STYLE18"><a href="#risk">Risk Management</a></p>
+         <p class="STYLE18"><a href="#gov">Algorithmic Game Theory and Optimal Mechanism Design </a></p>
+         <p class="STYLE18"><strong><a name="Profit"></a>09/2018 -- (Ongoing), Grouplens Lab, University of Minnesota, supervised by Prof. Joseph Konstan </strong>. <br />
+1. A Profit-oriented Recommender System </p>
+         <blockquote>
+           <p class="STYLE18">Traditional recommender systems focus on maximizing precision. However, for B2C business, how to make recommendation profitable, bring extending buying behaviors remains unsolved. We try to develop a reinforcement learning model to describe this process and find a good recommendation strategy. </p>
+         </blockquote>
          <p><span class="STYLE21"><span class="STYLE16"><strong><a name="r1" id="r1"></a></strong></span></span><span class="STYLE16"><span class="STYLE20"><span class="STYLE18"><strong>09/2014-05/2016, Department of Data  Mining, National Engineering  Laboratory for Speech and Language Information Processing, supervised by Prof. Qi Liu</strong>. <br />
           1. Design recommendation systems for group users.</span></span></span></p>
          <blockquote>
@@ -131,8 +138,8 @@
              Thanks to the beneficial suggestions from Prof. Thomas J. Sargent. </span></p>
            <p class="STYLE18">&nbsp;</p>
          </blockquote>
-         <p class="STYLE18"><span class="STYLE16"><a name="risk" id="risk"></a><strong>09/2017- (ongoing) School of Economics and Management, Tsinghua University, supervised by Prof. Michael R. Powers</strong></span><strong>.</strong></p>
-         <p class="STYLE18">1.A Risk Finance Strategy Paradigm with Copulas</p>
+         <p class="STYLE18"><span class="STYLE16"><strong>09/2017- 06/2018 School of Economics and Management, Tsinghua University, supervised by Prof. Michael R. Powers</strong></span><strong>.</strong></p>
+         <p class="STYLE18"><span class="STYLE16"><a name="risk" id="risk"></a></span> 1.A Risk Finance Strategy Paradigm with Copulas</p>
          <blockquote class="STYLE18">
            <p>1) When dealing with risks, companies can choose to pool, hedge or avoid them. However, the traditional risk finance paradigm can't give a quantitative method to describe the condition of the application of these strategies. </p>
            <p>2) In our prior work (Risk Finance for Catastrophe Losses with Pareto-Calibrated Levy-Stable Severities, Michael R. Powers), we used stable distributions to model this paradigm. In this paradigm, we assume that losses are independent, which is consistent with our real experience. </p>
@@ -146,6 +153,33 @@
            <p>When the expected frequency achieves some point, the firm can only accept lower dependence as the expected frequency increases(TypeI). It may be attributed to that higher frequency will increase a firms’ overall risks to a large extent. And an interesting inverse lower part appears(TypeIII). In this part, the firm will be exposed to high frequency and low dependence risks, and it will choose to hedge to diminish the risks brought by the high frequency.</p>
            <p>As p increases, the firm will be more sensitive to risks, and the lower part of the TypeI boundary will decreases more rapidly as the expected frequency increases. When p &gt; 4/3, the hedging districts in the right-upper corner and in the right-lower corner will merge when the expected frequency is large enough, which means that the firm will always choose to hedge when the expected frequency is large enough. When p &lt; 4/3, there will always be a room left for pooling no matter how larger the expected frequency will be.</p>
            <p><img src="pic/risk3.JPG" width="452" height="329" /><img src="pic/risk4.JPG" width="434" height="319" /></p>
+           <p class="STYLE18"><a name="gov"></a>2. <a href="pic/A Government Funding Allocation Mechanism.pdf">A Government Fund Allocation Mechanism Based upon Credibility Games </a></p>
+           <blockquote class="STYLE18">
+             <p>1) The problem to solve: Local governments tend to overreport their demands under the current allocation mechanism.</p>
+             <p>2)  What to do: Design a mechanism for the central government to allocate funding to local governments to rule out over reporting behaviors.<br>
+                <img src="pic/gov1.JPG" width="360" height="247"></p>
+             <p>3)  Challenges: <br>
+             a) No actual demand knowledge: how to estimate local governments’ credibility without the knowledge of actual demand for the fund <br>
+b) Incentivize honesty: how to allocate fund according to the estimation of credibility, such that the allocation result can incentivize local governments to report their demands honestly<br>
+c) Different features: how to allocate fund according to different features of different areas and different uses of the fund<br>
+d) Incentive compatible: how to make the fund-allocation mechanism incentive compatible<br>
+e) Exploration and exploitation: how to balance</p>
+             <p><br>
+               4) Solution: <br>
+               a) a UCB-style indicator based on the data of other governments <br>
+               b) a fund-allocation plan which considers randomness <br>
+               c) relates the features with actual demands through a linear model <br>
+               d) builds a game model between local governments <br>
+               e) a multi-armed bandit framework to balance the exploration and exploitation <br>
+               <img src="pic/gov2.JPG" width="520" height="101"><br>
+               <img src="pic/gov3.JPG" width="528" height="323"></p>
+             <p>5) Results:<br>
+               a) An incentive compatible mechanism: Proposes an incentive compatible mechanism based on a multi-armed bandit framework which leverages the gain of exaggerating demands in the short run by the decrease in the probability of being allocated funding in the long run.<br>
+               b) An UCB index on credibility: Proposes an UCB index which can measure the credibility of local governments, and a method to measure the loss of strategies adopted by local governments.<br>
+               c) A Bayesian Nash equilibrium: Proves that under this mechanism, the game on the credibility index between all the local governments will have a o(lnT/T)-bayesian nash equilibrium, where all the local governments will not over report their demands at this equilibrium.<br>
+</p>
+           </blockquote>
+           <p>&nbsp;</p>
            <p>&nbsp;</p>
            </blockquote>         
          <p class="STYLE26">&nbsp;</p>         <p class="STYLE18"><span class="STYLE16"><br /> 
@@ -153,6 +187,9 @@
               <br />
           </span></p></td>
        </tr>
+  <tr>
+    <td height="1759" valign="top" class="style3">&nbsp;</td>
+  </tr>
 </table></td> 
     </tr> 
 </table> 
