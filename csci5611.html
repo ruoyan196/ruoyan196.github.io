@@ -83,6 +83,7 @@
                       <a href="#5._Cloth_">Cloth</a><br>
                       <a href="#6._Shallow_Water_1d">Shallow Water 1d</a><br>
                       <a href="#7._Shallow_Water_2d">Shallow Water 2d</a><br>
+                      <a href="#8._Planning_PRM">Planning_PRM</a><br>
                     </p>
                     <p>1. Bouncing Ball <a name="bouncingball"></a></p>
                     <p> &nbsp; &nbsp; <span class="STYLE28">Group:<br>
@@ -203,6 +204,8 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/WaterFount
 
 
 
+
+
                           Magic Spells</font><br>
                         <br>
                         &nbsp;Group:<br>
@@ -303,11 +306,15 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/magic_spel
 
 
 
+
+
                       00:02 -- 00:07 The right magic wand is hit by fire
                       attack.<br>
                       <br>
                       &nbsp;&nbsp;&nbsp;
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -337,6 +344,8 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/magic_spel
 
 
 
+
+
                       00:28 -- 00:37The wood barrier protect the left
                       magic wand from being hit by wind attack.<br>
                       <br>
@@ -354,11 +363,15 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/magic_spel
 
 
 
+
+
                       00:37 -- 00:47The water barrier protect the right
                       magic wand from being hit by fire attack.<br>
                       <br>
                       &nbsp;&nbsp;&nbsp;
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -406,6 +419,8 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/magic_spel
 
 
 
+
+
                       The frame rate and the number of particles are
                       displayed on the screen. <br>
                       <br>
@@ -435,6 +450,8 @@ href="https://github.com/ruoyankong/animation/tree/master/assignment1/magic_spel
                       <br>
                       &nbsp;&nbsp;&nbsp;
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -528,6 +545,8 @@ href="https://github.com/Ethan-zc/CSci-5611-Assignments/tree/master/Assignment_2
 href="https://github.com/Ethan-zc/CSci-5611-Assignments/tree/master/Assignment_2/Assignment2_cloth/Cloth_copy">https://github.com/Ethan-zc/CSci-5611-Assignments/tree/master/Assignment_2/Assignment2_cloth/Cloth_copy</a><br>
                         &nbsp;&nbsp;&nbsp; </font><br>
                       <font size="-1"><span class="STYLE28">&nbsp;&nbsp;&nbsp;
+
+
 
                           Video:</span> </font></p>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp; <iframe
@@ -626,16 +645,20 @@ href="https://processing.org/reference/createShape_.html"
                       <meta charset="utf-8">
                       <b style="font-weight:normal;"
                         id="docs-internal-guid-03ac0557-7fff-7f29-21f1-7221f1ddac63">
-                        <p dir="ltr" style="line-height:1.2;text-align:
-                          justify;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">     <font size="+1">Difficulties:</font></span></p>
-                        <ol style="margin-top:0;margin-bottom:0;">
-                          <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">The first difficulty is the horizontal and vertical string force that apply on each node. The final row of nodes has different situation than others, since it only gets its own nodes ‘gravities. I solve this problem by calculating the final row independently.&nbsp;</span></p></li>
-                          <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Since drag and tear are using mouse pressing at the same time, I use a switch button X to switch between different mode.&nbsp;</span></p></li>
-                          <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">For tear mode, to judge if where mouse clicked have cloth on it is hard. I tried to use ray tracing but it failed. The way I solve it is by monitoring the position of dragging mouse, and find the nearest node to cut. To cut the nodes, I firstly add a 2d array to store all the status of nodes. If it is clicked, then the force applied from above string would not be calculated, and it would not be drawn as a vertex. </span></p></li>
-                        </ol>
-                      </b><br>
-                      <span class="STYLE28"></span></p>
-                  </td>
+                      </b></p>
+                    <p dir="ltr" style="line-height:1.2;text-align:
+                      justify;margin-top:0pt;margin-bottom:0pt;"><b
+                        style="font-weight:normal;"
+                        id="docs-internal-guid-03ac0557-7fff-7f29-21f1-7221f1ddac63"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">     <font size="+1">Difficulties:</font></span></b></p>
+                    <b style="font-weight:normal;"
+                      id="docs-internal-guid-03ac0557-7fff-7f29-21f1-7221f1ddac63">
+                      <ol style="margin-top:0;margin-bottom:0;">
+                        <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">The first difficulty is the horizontal and vertical string force that apply on each node. The final row of nodes has different situation than others, since it only gets its own nodes ‘gravities. I solve this problem by calculating the final row independently.&nbsp;</span></p></li>
+                        <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Since drag and tear are using mouse pressing at the same time, I use a switch button X to switch between different mode.&nbsp;</span></p></li>
+                        <li dir="ltr" style="list-style-type:decimal;font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: 3pt;"><p dir="ltr" style="line-height:1.2;text-align: justify;margin-top:0pt;margin-bottom:0pt;" role="presentation"><span style="font-size:10.5pt;font-family:'等线 Light';color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">For tear mode, to judge if where mouse clicked have cloth on it is hard. I tried to use ray tracing but it failed. The way I solve it is by monitoring the position of dragging mouse, and find the nearest node to cut. To cut the nodes, I firstly add a 2d array to store all the status of nodes. If it is clicked, then the force applied from above string would not be calculated, and it would not be drawn as a vertex. </span></p></li>
+                      </ol>
+                    </b><br>
+                    <span class="STYLE28"></span> </td>
                 </tr>
                 <tr>
                   <td class="style3" valign="top" height="1759">&nbsp;<span
@@ -728,8 +751,42 @@ href="https://people.sc.fsu.edu/%7Ejburkardt/cpp_src/shallow_water_1d/shallow_wa
                       need to change the color according to height to
                       make the effect significant.</span>
                     <p><b>&nbsp;&nbsp;&nbsp;&nbsp; </b><br>
-                      &nbsp;&nbsp;&nbsp;&nbsp; <br>
+                      &nbsp;<a name="8._Planning_PRM"></a> <span
+                        class="style3"><font size="+2">8. Planning PRM</font></span><br>
                     </p>
+                    <p> &nbsp; &nbsp; <span class="STYLE28">Group:<br>
+                      </span><span class="style3">&nbsp; &nbsp; &nbsp;
+                        Ruoyan Kong kong0135@umn.edu, Zichen Yang
+                        yang6703@umn.edu<br>
+                      </span></p>
+                    <p>&nbsp; &nbsp; <span class="STYLE28">Code:<br>
+                      </span><span class="style3">&nbsp; &nbsp; </span>
+                      <meta http-equiv="content-type"
+                        content="text/html; charset=UTF-8">
+                      <a
+href="https://github.com/ruoyankong/animation/tree/master/assignment3/prm_planning">https://github.com/ruoyankong/animation/tree/master/assignment3/prm_planning</a>
+                    </p>
+                    <p>&nbsp; &nbsp; <span class="STYLE28">Video:</span></p>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp; <iframe
+                        src="https://www.youtube.com/embed/wO_kxX3ftJg"
+                        allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture"
+                        allowfullscreen="" frameborder="0" width="1280"
+                        height="720"></iframe></p>
+                    <p>&nbsp; &nbsp; <span class="STYLE28">A list of
+                        features and when they are demonstrated:</span></p>
+                    <p><span class="style3">&nbsp; &nbsp; &nbsp; 0:02
+                        Planning route.<br>
+                      </span></p>
+                    &nbsp; &nbsp; <span class="STYLE28">Tools and
+                      Libraries :<br>
+                    </span><span class="style3">&nbsp; &nbsp; &nbsp;
+                      Processing 3.5.4</span><span class="style3"> <br>
+                    </span>
+                    <p><br>
+                      <br>
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp; </p>
                   </td>
                 </tr>
                 <tr>
